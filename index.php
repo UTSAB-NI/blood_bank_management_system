@@ -7,10 +7,7 @@ session_start();
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -33,7 +30,7 @@ session_start();
            <div class="p-6 md:p-12">
             <h2 class="text-4xl font-mono font-bold">Login</h2>
             <p class="mt-4 font-sans font-light font-grey-600">Login to access your admin panel</p>
-            <form action="login.php" method="post">
+            <form action="login_validate.php" method="post">
             <input type="text" placeholder="Enter name" name="username" class="mt-6 p-4 border-2 border-grey-300 rounded-md focus:outline-none focus:border-red-200">
             <br>
             <input type="text" placeholder="Enter password" name="password" class="mt-4 p-4 border-2 border-grey-300 rounded-md focus:outline-none focus:border-red-200">
@@ -45,18 +42,7 @@ session_start();
           <!--right side-->
 
               <img src="./images/img2.jpg" alt=""  class="w-[300px] hidden md:block rounded-r-md hover:scale-105 duration-500">
-            
-
-        
-
-
-
-
         </div>
-
-
-
-
 
         </div>
       
