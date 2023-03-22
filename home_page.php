@@ -4,75 +4,105 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            fontFamily: {
-                sans:['Josefin Sans','sans-serif'],
-                alata:['Alata'],
-            },
-          },
-        }
-      </script>
-    <title>Blood Donation Management</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Josefin Sans', 'sans-serif'],
+          alata: ['Alata'],
+        },
+      },
+    }
+  </script>
+  <title>Blood Donation Management</title>
 
 </head>
+
 <body>
-<?php
- $finaluser=$_SESSION['username'];
-if(!$finaluser){
+  <?php
+  $finaluser = $_SESSION['username'];
+  if (!$finaluser) {
     header("Location:index.php");
+  }
+  ?>
+
+  <!--nav bar-->
+  <?php
+  include 'nav_bar.php';
+  ?>
+
+<style>
+.fa-tint {
+  color: #b81616;
 }
-?>
-
-<!--nav bar-->
-<?php
-include 'nav_bar.php';
-?>
-
-<!--dashboard-->
 
 
-<div class="max-w-6xl mx-auto grid gap-6 md:grid-cols-4 mt-16">
+</style>
+  <!--dashboard-->
 
-    <div class="flex flex-col w-full bg-red-500 h-56 w-40  rounded-lg p-4 shadow-2xl">
-      hello
-    </div>
-    <div class="flex flex-col w-full  bg-red-500 h-56 w-40 rounded-lg p-4">
-      hello
-    </div>
-    <div class="flex flex-col w-full  bg-red-500 h-56 w-40 rounded-lg p-4">
-      hello
-    </div>
-    <div class="flex flex-col w-full bg-red-500 h-56 w-40 rounded-lg p-4">
-      hello
-    </div>
-    <div class="flex flex-col w-full  bg-red-500 h-56 w-40 rounded-lg p-4">
-      hello
-    </div>
-    <div class="flex flex-col w-full  bg-red-500 h-56 w-40 rounded-lg p-4">
-      hello
-    </div>
-    <div class="flex flex-col w-full  bg-red-500 h-56 w-40 rounded-lg p-4">
-      hello
-    </div>
-    <div class="flex flex-col w-full  bg-red-500 h-56 w-40 rounded-lg p-4">
-      hello
+
+  <div class="max-w-6xl mx-auto flex flex-col items-center space-y-4 mt-16 ">
+    <!--container 1-->
+    <div class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-10">
+      <!--card 1-->
+      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+        <!--top logo + blood group-->
+        <div class="flex space-x-12 justify-around px-4 py-2">
+          <h1 class="text-5xl font-bold text-center mt-6">A+</h1>
+          <i class="fa fa-tint fa-5x fa-red" aria-hidden="true"></i>
+        
+        </div>
+        <!--text part-->
+        <div class="ml-4 ">
+          <h1 class="">Blood Available</h1>
+          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+        </div> 
+      </div>
+      
+      <div class="flex flex-col  bg-red-500 h-56 w-56  rounded-lg p-4 shadow-2xl">
+        hello
+      </div>
+      <div class="flex flex-col  bg-red-500 h-56 w-56 rounded-lg p-4">
+        hello
+      </div>
+      <div class="flex flex-col   bg-red-500 h-56 w-56 rounded-lg p-4">
+        hello
+      </div>
     </div>
 
-</div>
+    <!--container 2-->
+    <div class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-10">
+
+      <div class="flex flex-col  bg-red-500 h-56 w-56  rounded-lg p-4 shadow-2xl">
+        hello
+      </div>
+      <div class="flex flex-col  bg-red-500 h-56 w-56  rounded-lg p-4 shadow-2xl">
+        hello
+      </div>
+      <div class="flex flex-col  bg-red-500 h-56 w-56 rounded-lg p-4">
+        hello
+      </div>
+      <div class="flex flex-col   bg-red-500 h-56 w-56 rounded-lg p-4">
+        hello
+      </div>
+    </div>
+
+  </div>
 
 
 
 
 
 </body>
+
 </html>

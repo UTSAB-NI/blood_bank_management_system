@@ -40,7 +40,7 @@
                 <a href="home_page.php" class="text-gray-500 hover:text-red-500 duration-500">Home</a>
                 <div class="hidden border-b border-red-500 group-hover:block duration-500 "></div>
             </div>
-            <div class="group border b">
+            <div class="group ">
                 <a href="donor_registration_form.php" class="text-gray-500 hover:text-red-500 duration-500">Donor Registration</a>
                 <div class="hidden border-b border-red-500 group-hover:block duration-500 text-center"></div>
             </div>
