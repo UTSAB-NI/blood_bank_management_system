@@ -40,11 +40,7 @@
                 <a href="home_page.php" class="text-gray-500 hover:text-red-500 duration-500">Home</a>
                 <div class="hidden border-b border-red-500 group-hover:block duration-500 "></div>
             </div>
-<<<<<<< HEAD
-            <div class="group border b">
-=======
             <div class="group ">
->>>>>>> testBranch
                 <a href="donor_registration_form.php" class="text-gray-500 hover:text-red-500 duration-500">Donor Registration</a>
                 <div class="hidden border-b border-red-500 group-hover:block duration-500 text-center"></div>
             </div>
