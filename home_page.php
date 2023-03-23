@@ -69,31 +69,108 @@ session_start();
         </div> 
       </div>
       
-      <div class="flex flex-col  bg-red-500 h-56 w-56  rounded-lg p-4 shadow-2xl">
-        hello
+      <!--card 1-->
+      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+        <!--top logo + blood group-->
+        <div class="flex space-x-12 justify-around px-4 py-2">
+          <h1 class="text-5xl font-bold text-center mt-6">B+</h1>
+          <i class="fa fa-tint fa-5x fa-red" aria-hidden="true"></i>
+        
+        </div>
+        <!--text part-->
+        <div class="ml-4 ">
+          <h1 class="">Blood Available</h1>
+          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+        </div> 
       </div>
-      <div class="flex flex-col  bg-red-500 h-56 w-56 rounded-lg p-4">
-        hello
+      <!--card 1-->
+      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+        <!--top logo + blood group-->
+        <div class="flex space-x-12 justify-around px-4 py-2">
+          <h1 class="text-5xl font-bold text-center mt-6">O+</h1>
+          <i class="fa fa-tint fa-5x fa-red" aria-hidden="true"></i>
+        
+        </div>
+        <!--text part-->
+        <div class="ml-4 ">
+          <h1 class="">Blood Available</h1>
+          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+        </div> 
       </div>
-      <div class="flex flex-col   bg-red-500 h-56 w-56 rounded-lg p-4">
-        hello
+      <!--card 1-->
+      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+        <!--top logo + blood group-->
+        <div class="flex space-x-12 justify-around px-4 py-2">
+          <h1 class="text-5xl font-bold text-center mt-6">AB+</h1>
+          <i class="fa fa-tint fa-5x fa-red" aria-hidden="true"></i>
+        
+        </div>
+        <!--text part-->
+        <div class="ml-4 ">
+          <h1 class="">Blood Available</h1>
+          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+        </div> 
       </div>
     </div>
 
-    <!--container 2-->
+    <!--container 2 -->
     <div class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-10">
-
-      <div class="flex flex-col  bg-red-500 h-56 w-56  rounded-lg p-4 shadow-2xl">
-        hello
+      <!--card 1-->
+      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+        <!--top logo + blood group-->
+        <div class="flex space-x-12 justify-around px-4 py-2">
+          <h1 class="text-5xl font-bold text-center mt-6">A-</h1>
+          <i class="fa fa-tint fa-5x fa-red" aria-hidden="true"></i>
+        
+        </div>
+        <!--text part-->
+        <div class="ml-4 ">
+          <h1 class="">Blood Available</h1>
+          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+        </div> 
       </div>
-      <div class="flex flex-col  bg-red-500 h-56 w-56  rounded-lg p-4 shadow-2xl">
-        hello
+      
+      <!--card 1-->
+      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+        <!--top logo + blood group-->
+        <div class="flex space-x-12 justify-around px-4 py-2">
+          <h1 class="text-5xl font-bold text-center mt-6">B-</h1>
+          <i class="fa fa-tint fa-5x fa-red" aria-hidden="true"></i>
+        
+        </div>
+        <!--text part-->
+        <div class="ml-4 ">
+          <h1 class="">Blood Available</h1>
+          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+        </div> 
       </div>
-      <div class="flex flex-col  bg-red-500 h-56 w-56 rounded-lg p-4">
-        hello
+      <!--card 1-->
+      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+        <!--top logo + blood group-->
+        <div class="flex space-x-12 justify-around px-4 py-2">
+          <h1 class="text-5xl font-bold text-center mt-6">O-</h1>
+          <i class="fa fa-tint fa-5x fa-red" aria-hidden="true"></i>
+        
+        </div>
+        <!--text part-->
+        <div class="ml-4 ">
+          <h1 class="">Blood Available</h1>
+          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+        </div> 
       </div>
-      <div class="flex flex-col   bg-red-500 h-56 w-56 rounded-lg p-4">
-        hello
+      <!--card 1-->
+      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+        <!--top logo + blood group-->
+        <div class="flex space-x-12 justify-around px-4 py-2">
+          <h1 class="text-5xl font-bold text-center mt-6">AB-</h1>
+          <i class="fa fa-tint fa-5x fa-red" aria-hidden="true"></i>
+        
+        </div>
+        <!--text part-->
+        <div class="ml-4 ">
+          <h1 class="">Blood Available</h1>
+          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+        </div> 
       </div>
     </div>
 
