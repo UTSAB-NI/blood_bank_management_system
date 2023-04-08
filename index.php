@@ -25,7 +25,7 @@ session_start();
       <!--Main outer container-->
     <div class="flex items-center justify-center bg-rose-100 h-screen ">
         <!--login from container-->
-        <div class="flex flex-col bg-white shadow-2xl rounded-md md:flex-row">
+        <div class="flex flex-col bg-white shadow-2xl rounded-md md:flex-row"> 
            <!--left side--> 
            <div class="p-6 md:p-12">
             <h2 class="text-4xl font-mono font-bold">Login</h2>
