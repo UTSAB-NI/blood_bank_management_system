@@ -1,6 +1,7 @@
 <?php
+include('connection.php');
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "bbms");
+
 //username
 $usertrim = trim(($_POST['username']));
 $userstrip = stripcslashes($usertrim);

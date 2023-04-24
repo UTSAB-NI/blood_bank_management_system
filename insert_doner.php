@@ -7,7 +7,7 @@
 
     <?php
     session_start();
-    $conn = mysqli_connect("localhost", "root", "", "bbms");
+    include('connection.php');
 
     //check connection
     if ($conn === false) {
