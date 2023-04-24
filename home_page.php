@@ -40,6 +40,15 @@ session_start();
   <?php
   include 'nav_bar.php';
   ?>
+  <?php
+    include('connection.php');
+
+    //check connection
+    if ($conn === false) {
+        die("ERROR: could not connect" . mysqli_connect_error());
+    }
+
+    ?>
 
 <style>
 .fa-tint {
@@ -65,7 +74,13 @@ session_start();
         <!--text part-->
         <div class="ml-4 ">
           <h1 class="">Blood Available</h1>
-          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+          <h3>Total unit: <span class="text-red-500 font-bold">
+          <?php
+                        $sql = "SELECT * FROM donor_registration where BloodGroup='A+' ";
+                        $result = mysqli_query($conn, $sql);
+                        echo (mysqli_num_rows($result));
+                        ?>
+          </span></h3>
         </div> 
       </div>
       
@@ -80,7 +95,11 @@ session_start();
         <!--text part-->
         <div class="ml-4 ">
           <h1 class="">Blood Available</h1>
-          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+          <h3>Total unit: <span class="text-red-500 font-bold"><?php
+                        $sql = "SELECT * FROM donor_registration where BloodGroup='B+' ";
+                        $result = mysqli_query($conn, $sql);
+                        echo (mysqli_num_rows($result));
+                        ?></span></h3>
         </div> 
       </div>
       <!--card 1-->
@@ -94,7 +113,11 @@ session_start();
         <!--text part-->
         <div class="ml-4 ">
           <h1 class="">Blood Available</h1>
-          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+          <h3>Total unit: <span class="text-red-500 font-bold"><?php
+                        $sql = "SELECT * FROM donor_registration where BloodGroup='O+' ";
+                        $result = mysqli_query($conn, $sql);
+                        echo (mysqli_num_rows($result));
+                        ?></span></h3>
         </div> 
       </div>
       <!--card 1-->
@@ -108,7 +131,11 @@ session_start();
         <!--text part-->
         <div class="ml-4 ">
           <h1 class="">Blood Available</h1>
-          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+          <h3>Total unit: <span class="text-red-500 font-bold"><?php
+                        $sql = "SELECT * FROM donor_registration where BloodGroup='AB+' ";
+                        $result = mysqli_query($conn, $sql);
+                        echo (mysqli_num_rows($result));
+                        ?></span></h3>
         </div> 
       </div>
     </div>
@@ -126,7 +153,11 @@ session_start();
         <!--text part-->
         <div class="ml-4 ">
           <h1 class="">Blood Available</h1>
-          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+          <h3>Total unit: <span class="text-red-500 font-bold"><?php
+                        $sql = "SELECT * FROM donor_registration where BloodGroup='A-' ";
+                        $result = mysqli_query($conn, $sql);
+                        echo (mysqli_num_rows($result));
+                        ?></span></h3>
         </div> 
       </div>
       
@@ -141,7 +172,11 @@ session_start();
         <!--text part-->
         <div class="ml-4 ">
           <h1 class="">Blood Available</h1>
-          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+          <h3>Total unit: <span class="text-red-500 font-bold"><?php
+                        $sql = "SELECT * FROM donor_registration where BloodGroup='B-' ";
+                        $result = mysqli_query($conn, $sql);
+                        echo (mysqli_num_rows($result));
+                        ?></span></h3>
         </div> 
       </div>
       <!--card 1-->
@@ -155,7 +190,11 @@ session_start();
         <!--text part-->
         <div class="ml-4 ">
           <h1 class="">Blood Available</h1>
-          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+          <h3>Total unit: <span class="text-red-500 font-bold"><?php
+                        $sql = "SELECT * FROM donor_registration where BloodGroup='O-' ";
+                        $result = mysqli_query($conn, $sql);
+                        echo (mysqli_num_rows($result));
+                        ?></span></h3>
         </div> 
       </div>
       <!--card 1-->
@@ -169,7 +208,11 @@ session_start();
         <!--text part-->
         <div class="ml-4 ">
           <h1 class="">Blood Available</h1>
-          <h3>Total unit: <span class="text-red-500 font-bold">5</span></h3>
+          <h3>Total unit: <span class="text-red-500 font-bold"><?php
+                        $sql = "SELECT * FROM donor_registration where BloodGroup='AB-' ";
+                        $result = mysqli_query($conn, $sql);
+                        echo (mysqli_num_rows($result));
+                        ?></span></h3>
         </div> 
       </div>
     </div>

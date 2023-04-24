@@ -10,7 +10,7 @@ include 'nav_bar.php';
 
     <?php
     session_start();
-    $conn = mysqli_connect("localhost", "root", "", "bbms");
+    include('connection.php');
 
     //check connection
     if ($conn === false) {
@@ -27,7 +27,7 @@ include 'nav_bar.php';
      
     <head>
         <meta charset="UTF-8">
-        <title>GFG User Details</title>
+        <title></title>
         <!-- CSS FOR STYLING THE PAGE -->
         <style>
             table {
@@ -66,6 +66,8 @@ include 'nav_bar.php';
     <body>
             <?php
             if (mysqli_num_rows($result) > 0) {
+                
+                
 
             ?>
     
@@ -109,7 +111,7 @@ include 'nav_bar.php';
         <?php
             }
             else{
-                echo("No record found");
+                echo("No records found");
             }
         ?>
 
