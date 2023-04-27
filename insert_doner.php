@@ -26,7 +26,7 @@
 '$blood_group','$gender')";
 
 if(mysqli_query($conn, $sql)){
-    header(("Location:donor_registration_form.php"));
+    header(("Location:donor_list.php"));
 
 } else{
     echo "ERROR: Hush! Sorry $sql. "
