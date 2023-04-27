@@ -60,11 +60,16 @@ session_start();
   <!--dashboard-->
 
 
+  <div class=" max-w-6xl mx-auto mt-10 ml-20">
+ 
+  </div>
+
   <div class="max-w-6xl mx-auto flex flex-col items-center space-y-4 mt-16 ">
     <!--container 1-->
+    
     <div class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-10">
       <!--card 1-->
-      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+      <a href="A+.php"><div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
         <!--top logo + blood group-->
         <div class="flex space-x-12 justify-around px-4 py-2">
           <h1 class="text-5xl font-bold text-center mt-6">A+</h1>
@@ -82,10 +87,10 @@ session_start();
                         ?>
           </span></h3>
         </div> 
-      </div>
+      </div></a>
       
-      <!--card 1-->
-      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+      <!--card 2-->
+     <a href="B+.php"> <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
         <!--top logo + blood group-->
         <div class="flex space-x-12 justify-around px-4 py-2">
           <h1 class="text-5xl font-bold text-center mt-6">B+</h1>
@@ -101,9 +106,9 @@ session_start();
                         echo (mysqli_num_rows($result));
                         ?></span></h3>
         </div> 
-      </div>
-      <!--card 1-->
-      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+      </div></a>
+      <!--card 3-->
+      <a href="O+.php"><div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
         <!--top logo + blood group-->
         <div class="flex space-x-12 justify-around px-4 py-2">
           <h1 class="text-5xl font-bold text-center mt-6">O+</h1>
@@ -119,9 +124,9 @@ session_start();
                         echo (mysqli_num_rows($result));
                         ?></span></h3>
         </div> 
-      </div>
-      <!--card 1-->
-      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+      </div></a>
+      <!--card 4-->
+      <a href="AB+.php"><div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
         <!--top logo + blood group-->
         <div class="flex space-x-12 justify-around px-4 py-2">
           <h1 class="text-5xl font-bold text-center mt-6">AB+</h1>
@@ -138,12 +143,12 @@ session_start();
                         ?></span></h3>
         </div> 
       </div>
-    </div>
+    </div></a>
 
     <!--container 2 -->
     <div class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-10">
-      <!--card 1-->
-      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+      <!--card 5-->
+      <a href="A-.php"><div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
         <!--top logo + blood group-->
         <div class="flex space-x-12 justify-around px-4 py-2">
           <h1 class="text-5xl font-bold text-center mt-6">A-</h1>
@@ -159,10 +164,10 @@ session_start();
                         echo (mysqli_num_rows($result));
                         ?></span></h3>
         </div> 
-      </div>
+      </div></a>
       
-      <!--card 1-->
-      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+      <!--card 6-->
+      <a href="B-.php"><div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
         <!--top logo + blood group-->
         <div class="flex space-x-12 justify-around px-4 py-2">
           <h1 class="text-5xl font-bold text-center mt-6">B-</h1>
@@ -178,9 +183,9 @@ session_start();
                         echo (mysqli_num_rows($result));
                         ?></span></h3>
         </div> 
-      </div>
-      <!--card 1-->
-      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+      </div></a>
+      <!--card 7-->
+     <a href="O-.php"> <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
         <!--top logo + blood group-->
         <div class="flex space-x-12 justify-around px-4 py-2">
           <h1 class="text-5xl font-bold text-center mt-6">O-</h1>
@@ -196,9 +201,9 @@ session_start();
                         echo (mysqli_num_rows($result));
                         ?></span></h3>
         </div> 
-      </div>
-      <!--card 1-->
-      <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
+      </div></a>
+      <!--card 8-->
+     <a href="AB-.php"> <div class="flex flex-col h-52 w-56 space-y-6  rounded-lg p-4 shadow-2xl p-4 hover:scale-110 duration-300">
         <!--top logo + blood group-->
         <div class="flex space-x-12 justify-around px-4 py-2">
           <h1 class="text-5xl font-bold text-center mt-6">AB-</h1>

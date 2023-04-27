@@ -17,7 +17,7 @@ include 'nav_bar.php';
         die("ERROR: could not connect" . mysqli_connect_error());
     }
 
-    $sql="SELECT * FROM donor_registration";
+    $sql="SELECT * FROM donor_registration where BloodGroup='O+' ";
 
     $result = mysqli_query($conn, $sql)
     ?>
@@ -123,51 +123,37 @@ include 'nav_bar.php';
         <?php
             }
             else{
-                echo("No records found");
-            }
-        ?>
-<!-- edit form  -->
-    
-<div class="flex items-center justify-center flex-column" id="myForm" >
-<form method="post" action="donor_edit.php"  >
+                ?> 
+                <section>
+            <h1 class="text-red-500">Donor List </h1>
+            <!-- TABLE CONSTRUCTION -->
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Blood Group</th>
+                    <th>Gender</th>
+                    <th>Action</th>
 
-  <label>First name</label>
-  <input type="text" class="border border-black" name="fname">
-  <label>Last name</label>
-  <input type="text" class="border border-black" name="lname">
-  <label>Address</label>
-  <input type="text" class="border border-black" name="address">
-  <label>Contact</label>
-  <input type="number" class="border border-black" name="contact">
-  <label>Email</label>
-  <input type="email" class="border border-black" name="email">
-  <label>Blood Group</label>
-  <input type="text" class="border border-black" name="bgroup">
-  <label>Gender:</label>
-  <select name="gender">
-    <option>Male</option>
-    <option>Female</option>
-    <option>Other</option>
-  </select>
-<input type="submit" value="Update">
-<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-</form>
-
-</div>
+                </tr>
+               
+                
+                    <td colspan="8" class="bg-red-400 text-white"><?php echo "Blood out of stock"?></td>    
+                    
+                       
+                        
+                    </td>
 
 
- <script>
+                </tr>
+                <?php
+                    }
+                ?>
+            </table>
+        </section>
 
-function openForm() {
-  documnet.getElementById("myForm").style.display="block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-
-</script> 
-
-
-
-</body>
+            
+        

@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-
-<head>Insert data page</head>
-
-<body>
-    <?php
+<?php
     session_start();
     include('connection.php');
 
-    //check connection
-    if ($conn === false) {
-        die("ERROR: could not connect" . mysqli_connect_error());
-    }
 
+    $id=$_GET['ID'];
     $first_name =  $_REQUEST['fname'];
     $last_name = $_REQUEST['lname'];
     $address = $_REQUEST['address'];
@@ -22,31 +13,18 @@
     $gender =  $_REQUEST['gender'];
 
 
-    $sql = "INSERT INTO donor_registration VALUES(NULL,'$first_name','$last_name','$address','$contact','$email',
-'$blood_group','$gender')";
+    $sql = "UPDATE donor_registration SET FirstName =  '$first_name', LastName = '$last_name', Address = '$address ', Contact = '$contact', Email = '$email ', BloodGroup = '$blood_group', Gender = '$gender' WHERE ID = $id";
 
 if(mysqli_query($conn, $sql)){
     header(("Location:donor_list.php"));
 
 } else{
-    echo "ERROR: Hush! Sorry $sql. "
-        . mysqli_error($conn);
+       
+
+     echo "ERROR: Hush! Sorry $sql. "
+         . mysqli_error($conn);
 }
  
 // Close connection
 
 mysqli_close($conn);
-
-
-
-
-
-
-
-
-
-
-
-    ?>
-
-</body>
