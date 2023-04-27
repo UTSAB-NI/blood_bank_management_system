@@ -21,14 +21,17 @@ include 'nav_bar.php';
 
     $result = mysqli_query($conn, $sql)
     ?>
+
+
     <!-- HTML code to display data in tabular format -->
     <!DOCTYPE html>
     <html lang="en">
-     
+    <link rel="stylesheet" href="./css/style.css">
     <head>
         <meta charset="UTF-8">
         <title></title>
         <!-- CSS FOR STYLING THE PAGE -->
+        
         <style>
             table {
                 margin: 0 auto;
@@ -83,6 +86,7 @@ include 'nav_bar.php';
                     <th>Contact</th>
                     <th>Blood Group</th>
                     <th>Gender</th>
+                    <th>Action</th>
 
                 </tr>
                 <!-- PHP CODE TO FETCH DATA FROM ROWS -->
@@ -101,6 +105,14 @@ include 'nav_bar.php';
                     <td><?php echo $row['Contact'];?></td>
                     <td><?php echo $row['BloodGroup'];?></td>
                     <td><?php echo $row['Gender'];?></td>
+                    <td>
+                        <div class="flex text-white space-x-2"> 
+                        <button  class="open-button bg-blue-600 rounded-lg px-4 py-2" onclick="openForm()" >Edit</button>
+                        <a href="delete_donor.php?ID=<?php echo $row['ID'];?>" class="bg-red-600 rounded-lg px-4 py-2">Delete</a>
+                        </div>
+                        
+                    </td>
+
 
                 </tr>
                 <?php
@@ -114,8 +126,48 @@ include 'nav_bar.php';
                 echo("No records found");
             }
         ?>
-
+<!-- edit form  -->
     
+<div class="flex items-center justify-center flex-column" id="myForm" >
+<form method="post" action="donor_edit.php"  >
 
-?>
+  <label>First name</label>
+  <input type="text" class="border border-black" name="fname">
+  <label>Last name</label>
+  <input type="text" class="border border-black" name="lname">
+  <label>Address</label>
+  <input type="text" class="border border-black" name="address">
+  <label>Contact</label>
+  <input type="number" class="border border-black" name="contact">
+  <label>Email</label>
+  <input type="email" class="border border-black" name="email">
+  <label>Blood Group</label>
+  <input type="text" class="border border-black" name="bgroup">
+  <label>Gender:</label>
+  <select name="gender">
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+  </select>
+<input type="submit" value="Update">
+<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</form>
+
+</div>
+
+
+ <script>
+
+function openForm() {
+  documnet.getElementById("myForm").style.display="block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script> 
+
+
+
 </body>

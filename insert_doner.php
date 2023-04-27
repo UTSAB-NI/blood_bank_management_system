@@ -4,7 +4,6 @@
 <head>Insert data page</head>
 
 <body>
-
     <?php
     session_start();
     include('connection.php');
@@ -35,9 +34,8 @@ if(mysqli_query($conn, $sql)){
 }
  
 // Close connection
+
 mysqli_close($conn);
-
-
 
 
 
