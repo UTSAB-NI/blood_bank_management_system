@@ -53,6 +53,10 @@
                 <div class="hidden border-b border-red-500 group-hover:block duration-500 text-center"></div>
             </div>
             <div class="group ">
+                <a href="pending_request.php" class="text-gray-500 hover:text-red-500 duration-500">Pending Request</a>
+                <div class="hidden border-b border-red-500 group-hover:block duration-500 text-center"></div>
+            </div>
+            <div class="group ">
                 <a href="logout.php" class="text-gray-500 hover:text-red-500 duration-500">Log Out</a>
                 <div class="hidden border-b border-red-500 group-hover:block duration-500 text-center"></div>
             </div> 
