@@ -13,7 +13,7 @@
     $gender =  $_REQUEST['gender'];
 
 
-    $sql = "UPDATE donor_registration SET FirstName =  '$first_name', LastName = '$last_name', Address = '$address ', Contact = '$contact', Email = '$email ', BloodGroup = '$blood_group', Gender = '$gender' WHERE ID = $id";
+    $sql = "UPDATE donor_registration SET FirstName =  '$first_name', LastName = '$last_name', Address = '$address ', Contact = '$contact', Email = '$email ', BloodGroup = '$blood_group', Gender = '$gender' WHERE ID = 9";
 
 if(mysqli_query($conn, $sql)){
     header(("Location:donor_list.php"));
